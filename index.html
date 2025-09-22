@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abdulhak Alwesabi Portfolio - Home</title>
+    <meta name="description" content="Portfolio of Abdulhak Alwesabi – Visual Media Specialist, Cinematographer, and Director." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutrals -->
+    <!-- Application Structure Plan: The application uses a logical, multi-section single-page layout. The key structural change is within the 'Projects' section, where a linear list is replaced by a dynamic, filterable grid. This interactive architecture was chosen to empower the user to easily explore and synthesize the portfolio content by professional role (e.g., Director vs. DOP). This approach improves usability by reducing visual clutter and allowing for targeted content exploration, making it a more efficient and engaging experience than a simple scroll-based list. -->
+    <!-- Visualization & Content Choices: Report Info: Portfolio projects categorized by professional role. Goal: Organize, Explore. Viz/Presentation: A set of filter buttons and a dynamic grid of project cards. Interaction: Clicking a filter button (`data-filter` attribute) dynamically shows/hides project cards based on a corresponding `data-role` attribute using vanilla JS. Justification: This method provides a clear, interactive way to navigate a large set of projects without needing separate pages, improving user flow and engagement. Library/Method: Tailwind for layout, vanilla JS for filtering logic. NO SVG/Mermaid. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        :root{
+            --bg:#0a0a0a; --card:#121212; --muted:#8b8b8b; --text:#f4f4f5; --brand:#00d0ff; --brand-2:#6df0c2;
+            --ring: rgba(0,208,255,.35);
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{margin:0;background:radial-gradient(1200px 600px at 80% -10%, #0f2230 0%, transparent 60%), radial-gradient(1000px 700px at -10% 20%, #0b2a23 0%, transparent 60%), var(--bg); color:var(--text);font-family:'Tajawal', sans-serif;line-height:1.6}
+        a{color:var(--text);text-decoration:none}
+    </style>
+</head>
+<body class="selection:bg-brand selection:text-black">
+    <header class="sticky top-0 bg-neutral-950 bg-opacity-70 backdrop-filter backdrop-blur-lg border-b border-neutral-800 z-50">
+        <div class="container mx-auto px-5 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2 font-extrabold tracking-tight">
+                <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-tr from-brand to-brand-2 shadow-lg shadow-ring"></span>
+                Abdulhak Alwesabi Portfolio
+            </div>
+            <nav class="hidden md:flex items-center gap-2" aria-label="Main">
+                <a href="index.html" class="p-2 rounded-lg hover:bg-neutral-800 transition">Home</a>
+                <a href="projects.html" class="p-2 rounded-lg hover:bg-neutral-800 transition">Projects</a>
+                <a href="contact.html" class="p-2 rounded-lg hover:bg-neutral-800 transition">Contact</a>
+            </nav>
+            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:caf1acd6-aaa7-4dbd-a6b9-17c13e6dad80" target="_blank" class="bg-neutral-800 text-neutral-200 px-4 py-2 rounded-lg border border-neutral-700 hover:bg-neutral-700 transition font-semibold">Download Resume</a>
+        </div>
+    </header>
+
+    <main id="home" class="container mx-auto px-5 lg:px-8">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 py-16 items-center">
+            <div class="order-2 md:order-1">
+                <p class="inline-flex items-center gap-2 text-neutral-400 font-bold uppercase tracking-widest text-sm">
+                    <span class="h-px w-12 bg-gradient-to-r from-transparent via-brand to-brand-2"></span>
+                    Welcome
+                </p>
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight my-2">Welcome to <strong>Abdulhak Alwesabi Portfolio</strong></h1>
+                <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-6 mt-6">
+                    <h2 class="text-xl font-bold mb-2">About Me</h2>
+                    <p class="text-lg text-neutral-300"><strong>Visual Media Specialist & Filmmaker</strong></p>
+                    <p class="mt-2 text-neutral-400">Abdulhak Alwesabi, a creative cinematographer and visual media specialist, with over 8 years of expertise in photography, video & photo editing, and post-production. Holder of the UAE Golden Visa, he is recognized for contributions to high-profile cultural and academic events. Skilled in capturing compelling visuals, managing behind-the-scenes productions, and delivering impactful digital content across media platforms. Adept at transforming complex ideas into engaging visual stories that resonate with diverse audiences and elevate brand presence.</p>
+                </div>
+                <div class="flex flex-wrap gap-3 mt-4">
+                    <a class="bg-gradient-to-br from-brand to-brand-2 text-neutral-900 px-4 py-2 rounded-xl font-semibold hover:opacity-90 transition" href="projects.html">View Projects</a>
+                    <a class="bg-neutral-800 text-neutral-200 px-4 py-2 rounded-xl border border-neutral-700 hover:bg-neutral-700 transition font-semibold" href="contact.html">Get in touch</a>
+                </div>
+            </div>
+            <aside class="order-1 md:order-2">
+                <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
+                    <img src="https://placehold.co/800x800/222222/c0c0c0?text=Abdulhak+Alwesabi" alt="Abdulhak Alwesabi's personal photo" class="w-full h-auto rounded-lg mb-4">
+                    <h3 class="text-lg font-bold mb-2">Quick Info</h3>
+                    <ul class="text-neutral-400 list-disc list-inside space-y-1">
+                        <li>Based in Sharjah, UAE</li>
+                        <li>Roles: Cinematographer, Photographer, Director, Voice Over Artist</li>
+                        <li>Available for select collaborations</li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="border-t border-neutral-800 mt-16 py-8">
+        <div class="container mx-auto px-5 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
+            <div>
+                <div class="text-neutral-400 text-sm">Sharjah, United Arab Emirates</div>
+                <div class="text-neutral-400 text-sm mt-1">+971557335748 · <a href="mailto:abdulhaqalwesabi@gmail.com" class="hover:text-brand transition">abdulhaqalwesabi@gmail.com</a></div>
+                <div class="text-neutral-400 text-sm mt-2">© 2025 Abdulhak Alwesabi Portfolio</div>
+            </div>
+            <div class="flex items-center gap-2">
+                <a href="https://www.instagram.com/w9abi/" target="_blank" rel="noopener noreferrer" class="p-2 border border-neutral-800 rounded-lg hover:bg-neutral-800 transition">Instagram</a>
+                <a href="https://www.linkedin.com/in/abdulhaq-a-47348b131/" target="_blank" rel="noopener noreferrer" class="p-2 border border-neutral-800 rounded-lg hover:bg-neutral-800 transition">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

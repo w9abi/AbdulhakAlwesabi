@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abdulhak Alwesabi Portfolio - Projects</title>
+    <meta name="description" content="Portfolio of Abdulhak Alwesabi – Visual Media Specialist, Cinematographer, and Director." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --bg:#0a0a0a; --card:#121212; --muted:#8b8b8b; --text:#f4f4f5; --brand:#00d0ff; --brand-2:#6df0c2;
+            --ring: rgba(0,208,255,.35);
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{margin:0;background:radial-gradient(1200px 600px at 80% -10%, #0f2230 0%, transparent 60%), radial-gradient(1000px 700px at -10% 20%, #0b2a23 0%, transparent 60%), var(--bg); color:var(--text);font-family:'Tajawal', sans-serif;line-height:1.6}
+        a{color:var(--text);text-decoration:none}
+    </style>
+</head>
+<body class="selection:bg-brand selection:text-black">
+    <header class="sticky top-0 bg-neutral-950 bg-opacity-70 backdrop-filter backdrop-blur-lg border-b border-neutral-800 z-50">
+        <div class="container mx-auto px-5 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2 font-extrabold tracking-tight">
+                <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-tr from-brand to-brand-2 shadow-lg shadow-ring"></span>
+                Abdulhak Alwesabi Portfolio
+            </div>
+            <nav class="hidden md:flex items-center gap-2" aria-label="Main">
+                <a href="index.html" class="p-2 rounded-lg hover:bg-neutral-800 transition">Home</a>
+                <a href="projects.html" class="p-2 rounded-lg hover:bg-neutral-800 transition">Projects</a>
+                <a href="contact.html" class="p-2 rounded-lg hover:bg-neutral-800 transition">Contact</a>
+            </nav>
+            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:caf1acd6-aaa7-4dbd-a6b9-17c13e6dad80" target="_blank" class="bg-neutral-800 text-neutral-200 px-4 py-2 rounded-lg border border-neutral-700 hover:bg-neutral-700 transition font-semibold">Download Resume</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-5 lg:px-8">
+        <section id="projects" class="py-16">
+            <h2 class="text-3xl font-bold mb-2">My Projects</h2>
+            <div class="flex flex-wrap gap-2 my-4">
+                <button data-filter="all" class="filter-btn px-3 py-1 bg-neutral-800 border border-neutral-700 rounded-full text-sm text-neutral-300 hover:bg-neutral-700 transition">All</button>
+                <button data-filter="cinematography" class="filter-btn px-3 py-1 bg-neutral-800 border border-neutral-700 rounded-full text-sm text-neutral-300 hover:bg-neutral-700 transition">Cinematography & Photography</button>
+                <button data-filter="direction" class="filter-btn px-3 py-1 bg-neutral-800 border border-neutral-700 rounded-full text-sm text-neutral-300 hover:bg-neutral-700 transition">Direction & Production</button>
+                <button data-filter="voiceover" class="filter-btn px-3 py-1 bg-neutral-800 border border-neutral-700 rounded-full text-sm text-neutral-300 hover:bg-neutral-700 transition">Voice Over</button>
+            </div>
+            
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Projects from CV -->
+                <article data-role="cinematography" class="project-card bg-neutral-900 border border-neutral-800 rounded-xl p-4 transition-all duration-300">
+                    <h3 class="text-lg font-bold mb-1">Hekayatna – Music Video</h3>
+                    <p class="text-neutral-500 text-sm">Client: Sharjah Radio</p>
+                    <p class="text-neutral-400 mt-2 text-sm">A music video showcasing Sharjah City and how it appeared in the past.</p>
+                </article>
+                <article data-role="cinematography" class="project-card bg-neutral-900 border border-neutral-800 rounded-xl p-4 transition-all duration-300">
+                    <h3 class="text-lg font-bold mb-1">Zidni – Sultan</h3>
+                    <p class="text-neutral-500 text-sm">Client: Thamra Media, Sultan</p>
+                    <p class="text-neutral-400 mt-2 text-sm">A visual adaptation of Ibn Al-Farid’s poetry blending classical verse with modern cinematography.</p>
+                </article>
+                <article data-role="cinematography" class="project-card bg-neutral-900 border border-neutral-800 rounded-xl p-4 transition-all duration-300">
+                    <h3 class="text-lg font-bold mb-1">From My Oud to the World – Documentary</h3>
+                    <p class="text-neutral-500 text-sm">Client: Thamra Media</p>
+                    <p class="text-neutral-400 mt-2 text-sm">A documentary film taking you on an enriching journey about the life of the oud musician Sadiq Jafar.</p>
+                </article>
+                <article data-role="direction" class="project-card bg-neutral-900 border border-neutral-800 rounded-xl p-4 transition-all duration-300">
+                    <h3 class="text-lg font-bold mb-1">Youngest Publisher Story – Documentary</h3>
+                    <p class="text-neutral-500 text-sm">Client: Rainbow Chimney</p>
+                    <p class="text-neutral-400 mt-2 text-sm">A documentary showcasing the success story of Aldhabi Almuhairi, from her beginnings to becoming the world's youngest publisher.</p>
+                </article>
+                <article data-role="direction" class="project-card bg-neutral-900 border border-neutral-800 rounded-xl p-4 transition-all duration-300">
+                    <h3 class="text-lg font-bold mb-1">Talabna UAE – National Campaign Video</h3>
+                    <p class="text-neutral-500 text-sm">Client: Talabna UAE</p>
+                    <p class="text-neutral-400 mt-2 text-sm">Directed and produced a National Day campaign video, from concept development to final editing.</p>
+                </article>
+                <article data-role="voiceover" class="project-card bg-neutral-900 border border-neutral-800 rounded-xl p-4 transition-all duration-300">
+                    <h3 class="text-lg font-bold mb-1">International Youth Day – Festive Video</h3>
+                    <p class="text-neutral-500 text-sm">Client: Ministry of Education (UAE)</p>
+                    <p class="text-neutral-400 mt-2 text-sm">A celebration of young people and their ambitions, highlighting limitless aspirations.</p>
+                </article>
+                <article data-role="voiceover" class="project-card bg-neutral-900 border border-neutral-800 rounded-xl p-4 transition-all duration-300">
+                    <h3 class="text-lg font-bold mb-1">MOE Customer Service – Promo</h3>
+                    <p class="text-neutral-500 text-sm">Client: Ministry of Education (UAE)</p>
+                    <p class="text-neutral-400 mt-2 text-sm">Announcing the updated customer service number for the Ministry of Education.</p>
+                </article>
+                <article data-role="cinematography" class="project-card bg-neutral-900 border border-neutral-800 rounded-xl p-4 transition-all duration-300">
+                    <h3 class="text-lg font-bold mb-1">Ma A'ada Holm – Music Video</h3>
+                    <p class="text-neutral-500 text-sm">Client: Sharjah Social Services Department</p>
+                    <p class="text-neutral-400 mt-2 text-sm">Created for Emirati Children's Day, highlighting that Emirati children live in a just and peaceful environment, free from harm.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-neutral-800 mt-16 py-8">
+        <div class="container mx-auto px-5 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
+            <div>
+                <div class="text-neutral-400 text-sm">Sharjah, United Arab Emirates</div>
+                <div class="text-neutral-400 text-sm mt-1">+971557335748 · <a href="mailto:abdulhaqalwesabi@gmail.com" class="hover:text-brand transition">abdulhaqalwesabi@gmail.com</a></div>
+                <div class="text-neutral-400 text-sm mt-2">© 2025 Abdulhak Alwesabi Portfolio</div>
+            </div>
+            <div class="flex items-center gap-2">
+                <a href="https://www.instagram.com/w9abi/" target="_blank" rel="noopener noreferrer" class="p-2 border border-neutral-800 rounded-lg hover:bg-neutral-800 transition">Instagram</a>
+                <a href="https://www.linkedin.com/in/abdulhaq-a-47348b131/" target="_blank" rel="noopener noreferrer" class="p-2 border border-neutral-800 rounded-lg hover:bg-neutral-800 transition">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+        
+            function setActiveFilter(activeFilter) {
+                filterBtns.forEach(btn => {
+                    btn.classList.remove('bg-neutral-700', 'text-white');
+                    btn.classList.add('bg-neutral-800', 'text-neutral-300');
+                });
+                const selectedBtn = document.querySelector(`[data-filter="${activeFilter}"]`);
+                if (selectedBtn) {
+                    selectedBtn.classList.add('bg-neutral-700', 'text-white');
+                    selectedBtn.classList.remove('bg-neutral-800', 'text-neutral-300');
+                }
+            }
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filter = btn.dataset.filter;
+                    setActiveFilter(filter);
+                    projectCards.forEach(card => {
+                        const role = card.dataset.role;
+                        if (filter === 'all' || role === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            setActiveFilter('all');
+        });
+    </script>
+</body>
+</html>
